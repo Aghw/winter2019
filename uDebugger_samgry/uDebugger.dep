@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>2</fileVersion>
+    <fileChecksum>3500417386</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\BSP\hw_init.c</file>
+            <file>$PROJ_DIR$\BSP\hw_init.h</file>
+            <file>$PROJ_DIR$\BSP\interrupt.c</file>
+            <file>$PROJ_DIR$\BSP\ST\StdPeripheralDrivers\stm32f4xx_usart.h</file>
+            <file>$PROJ_DIR$\BSP\ST\StdPeripheralDrivers\stm32f4xx_rcc.h</file>
+            <file>$PROJ_DIR$\BSP\CMSIS\core_cm4.h</file>
+            <file>$PROJ_DIR$\BSP\CMSIS\core_cmFunc.h</file>
+            <file>$PROJ_DIR$\BSP\debugger.c</file>
+            <file>$PROJ_DIR$\BSP\ST\StdPeripheralDrivers\misc.h</file>
+            <file>$PROJ_DIR$\App\main.c</file>
+            <file>$PROJ_DIR$\BSP\ST\StdPeripheralDrivers\stm32f4xx_conf.h</file>
+            <file>$PROJ_DIR$\BSP\CMSIS\core_cmSimd.h</file>
+            <file>$PROJ_DIR$\BSP\ST\StdPeripheralDrivers\stm32f4xx_usart.c</file>
+            <file>$PROJ_DIR$\BSP\ST\StdPeripheralDrivers\stm32f4xx_gpio.c</file>
+            <file>$PROJ_DIR$\BSP\CMSIS\system_stm32f4xx.h</file>
+            <file>$PROJ_DIR$\BSP\datainit.c</file>
+            <file>$PROJ_DIR$\BSP\bsp.h</file>
+            <file>$PROJ_DIR$\BSP\CMSIS\core_cmInstr.h</file>
+            <file>$PROJ_DIR$\BSP\CMSIS\stm32f4xx.h</file>
+            <file>$PROJ_DIR$\BSP\ST\StdPeripheralDrivers\misc.c</file>
+            <file>$PROJ_DIR$\BSP\ST\StdPeripheralDrivers\stm32f4xx_gpio.h</file>
+            <file>$PROJ_DIR$\BSP\ST\StdPeripheralDrivers\stm32f4xx_rcc.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32f4xx_gpio.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\datainit.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\misc.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\misc.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32f4xx_gpio.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\debugger.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\print.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\interrupt.o</file>
+            <file>$PROJ_DIR$\Debug\List\stm32f4xx_gpio.lst</file>
+            <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup.o</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\Debug\Exe\uDebugger.sim</file>
+            <file>$PROJ_DIR$\Debug\List\hw_init.lst</file>
+            <file>$PROJ_DIR$\Debug\Obj\datainit.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\misc.pbi</file>
+            <file>$PROJ_DIR$\Debug\List\print.lst</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\print.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\interrupt.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32f4xx_gpio.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\uDebugger.pbd</file>
+            <file>$PROJ_DIR$\Debug\Obj\print.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32f4xx_rcc.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart.pbi</file>
+            <file>$PROJ_DIR$\Debug\List\stm32f4xx_usart.lst</file>
+            <file>$PROJ_DIR$\Debug\Obj\hw_init.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$PROJ_DIR$\Debug\List\debugger.lst</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32f4xx_usart.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\hw_init.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+            <file>$PROJ_DIR$\Debug\List\misc.lst</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\Util\print.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart.o</file>
+            <file>$PROJ_DIR$\Debug\List\interrupt.lst</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32f4xx_usart.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32f4xx_rcc.pbi</file>
+            <file>$PROJ_DIR$\BSP\layout.icf</file>
+            <file>$PROJ_DIR$\Debug\List\stm32f4xx_rcc.lst</file>
+            <file>$PROJ_DIR$\Debug\Obj\datainit.o</file>
+            <file>$PROJ_DIR$\Debug\List\uart.lst</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32f4xx_rcc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32f4xx_usart.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$PROJ_DIR$\BSP\startup.s</file>
+            <file>$PROJ_DIR$\Debug\Obj\hw_init.o</file>
+            <file>$PROJ_DIR$\Debug\Exe\c.out</file>
+            <file>$PROJ_DIR$\BSP\nucleoboard.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\debugger.o</file>
+            <file>$PROJ_DIR$\Util\print.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\interrupt.__cstat.et</file>
+            <file>$PROJ_DIR$\BSP\uart.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\List\c.map</file>
+            <file>$PROJ_DIR$\Debug\List\main.lst</file>
+            <file>$PROJ_DIR$\Debug\List\datainit.lst</file>
+            <file>$PROJ_DIR$\Debug\Obj\debugger.pbi</file>
+            <file>$PROJ_DIR$\BSP\uart.h</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\BSP\hw_init.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 39 79</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 55</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 60</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 81 18 5 43 46 74 48 77 63 17 34 56 6 11 14 10 20 4 3 8</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 18 74 5 34 3 43 17 4 20 14 10 11 48 81 6 46 77 63 56 8</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\BSP\interrupt.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 66 32</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 47</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 84</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 81 18 5 43 46 74 48 77 63 17 34 56 6 11 14 10 20 4 3 8</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 18 74 3 43 11 34 5 17 4 20 14 10 6 48 81 46 77 63 56 8</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\BSP\debugger.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 57 82</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 90</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 30</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 43 46 74 48 77 63 83 81 18 5 17 34 56 6 11 14 10 20 4 3 8 44 27</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 63 4 27 74 81 18 5 43 56 34 77 3 10 83 46 48 44 20 14 6 8 17 11</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\App\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 88 59</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 68</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 24</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 16 1 91 83 81 18 5 43 46 74 48 77 63 17 34 56 6 11 14 10 20 4 3 8 44 27</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 17 4 27 1 81 18 5 63 56 34 3 43 74 83 91 44 20 14 11 77 8 46 16 10 6 48</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\BSP\ST\StdPeripheralDrivers\stm32f4xx_usart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 54 67</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 76</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 58</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 3 18 5 43 46 74 48 77 63 17 34 56 6 11 14 10 20 4 8</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 18 14 77 6 74 8 4 5 43 10 46 63 56 34 3 17 11 48 20</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\BSP\ST\StdPeripheralDrivers\stm32f4xx_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 33 49</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 22</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 29</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 20 18 5 43 46 74 48 77 63 17 34 56 6 11 14 10 4 3 8</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 43 6 74 8 5 77 4 18 14 10 46 63 56 34 20 17 11 48 3</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\BSP\datainit.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 89 72</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 40</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 23</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 43 46 74 48 77 63</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 46 48 74 43 77 63</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\BSP\ST\StdPeripheralDrivers\misc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 62 26</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 41</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 25</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 8 18 5 43 46 74 48 77 63 17 34 56 6 11 14 10 20 4 3</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 11 63 56 43 34 4 5 17 46 18 14 10 6 77 74 8 48 20 3</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\BSP\ST\StdPeripheralDrivers\stm32f4xx_rcc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 71 75</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 69</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 52</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 4 18 5 43 46 74 48 77 63 17 34 56 6 11 14 10 20 3 8</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 34 43 10 46 18 5 63 56 4 14 6 77 74 8 17 11 48 20 3</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 80 87</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Util\print.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 42 51</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 45</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 31</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 83 81 18 5 43 46 74 48 77 63 17 34 56 6 11 14 10 20 4 3 8 44 27</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\BSP\startup.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 35</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\c.out</name>
+            <outputs>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 38</file>
+                </tool>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 87</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 70 72 82 79 32 59 26 51 35 49 75 67 65 37 36 61 28</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\BSP\uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 73 65</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 53</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 86</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 81 18 5 43 46 74 48 77 63 17 34 56 6 11 14 10 20 4 3 8</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 18 74 10 20 43 34 4 14 6 3 5 17 11 48 81 46 77 63 56 8</file>
+                </tool>
+            </inputs>
+        </file>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+</project>
