@@ -172,7 +172,8 @@ HardFaultIrqHandler
 
       // Add offset to R0 so it points to location where PC was pushed on stack
       // <your code here>
-      LDR R0, [R0,#24];
+//      LDR R0, [R0,#28];
+      ADD R0, R0,#28;
 
       // Save R0 to stack since we will want to reference it later
       // <your code here>
