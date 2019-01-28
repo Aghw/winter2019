@@ -49,9 +49,10 @@ uint32_t stackTwoSP;       // Value of task 2's stack pointer
 
 uint32_t currentSP;        // The value of the current task's stack pointer
 uint32_t taskID;           // The ID of the current task
+int gTSLock = 0; // global test-and-set lock var
 
 void SystemInit(void);
-
+int testAndSet(int *test);
 
 //
 // taskOne counts up from 0.
@@ -60,11 +61,16 @@ void SystemInit(void);
 void taskOne(void)
 {
 	int count = 0;
+
 	while(1)
 	{
+            while (testAndSet(&gTSLock) != 0) { /* spin here */ };
+    
 		PrintString("task one: ");
 		Print_uint32(count++);
 		PrintString("\n");
+             gTSLock = 0;
+             
 		int i;
 		for(i=0;i<10000;i++);    // delay
 	}
@@ -79,9 +85,12 @@ void taskTwo(void)
 	int count = 0xFFFFFFFF;
 	while(1)
 	{
+            while (testAndSet(&gTSLock) != 0) { /* spin here */ };
 		PrintString("task two: ");
 		Print_uint32(count--);
 		PrintString("\n");
+            gTSLock = 0;
+            
 		int i;
 		for(i=0;i<10000;i++);    // delay
 	}
@@ -99,7 +108,7 @@ void taskTwo(void)
 */
 void scheduler(uint32_t sp)
 {
-	PrintString("\nSwitch\n");
+//	PrintString("\nSwitch\n");
 
 	if (taskID == 1)
 	{
