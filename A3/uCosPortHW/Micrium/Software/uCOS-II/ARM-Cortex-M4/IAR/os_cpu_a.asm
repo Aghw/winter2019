@@ -100,20 +100,24 @@ EXC_RET_MSP_THREAD EQU     0xFFFFFFF9                              ; Exception r
 OS_CPU_SR_Save
     // Capture current interrupt enable/disable status (PRIMASK)
     // <Your code here>
+    MRS     R0, PRIMASK         // R0 = PRIMASK
     
     // Disable interrupts
     // <Your code here>
+    CPSID   I                   // disable PRIMASK
     
     // Return captured interrupt enable/disable status
     // <Your code here>
-
+    BX      LR
+    
 OS_CPU_SR_Restore
     // Restore argument in R0 to PRIMASK
     // <Your code here>
+    MSR     PRIMASK, R0     // PRIMASK = R0
     
     // Return
     // <Your code here>
-
+    BX      LR
 
 ;********************************************************************************************************
 ;                                         START MULTITASKING
@@ -196,6 +200,7 @@ OSIntCtxSw
 ContextSwitch
     // Disable interrupts
     // <Your code here>
+    CPSID   I
     
     // For the initial context switch we must not save the context.
     // To ensure this, PSP is used as a flag to indicate the initial context 
@@ -204,38 +209,72 @@ ContextSwitch
     
     // Copy process stack pointer to R0
     // <Your code here>
-    
+    MRS     R0, PSP    
+ 
     // Subtract 4 and set APSR flags
     // <Your code here>
+    SUBS    R0, R0, #4
     
     // If R0==0 use conditional execution to set PSP to 0 and branch to 
     // ContextSwitch_AfterSave
     // <Your code here>
+//    IT       EQ                // set up conditional statement for R0==0
+//    MSREQ     PSP, R0
+//    BEQ       ContextSwitch_AfterSave
+    
+    CBNZ    R0, save_context  // compare and branch to save_context on PSP != 0
+    MOV     R0, #0
+    MSR     PSP, R0
+    B       ContextSwitch_AfterSave    // branch to ContextSwitch_AfterSave
 
+//    CMP     R0, #0              //
+//    MOV     R1, #0
+//    MSR     PSP, R1
+//    BEQ       ContextSwitch_AfterSave    // branch to ContextSwitch_AfterSave on equal
+    
+save_context    
     // Save R4-R11 to main stack
     // <Your code here>
-
+    PUSH    {R4-R11}            // Push R4-R11
+    
     // OSTCBCur->OSTCBStkPtr = SP
     // <Your code here>
-
-    // At this point, entire context of task has been saved
+    MOV     R0, SP
+    LDR     R1, =OSTCBCur
+    LDR     R1, [R1]
+    STR     R0, [R1]
     
+    // At this point, entire context of task has been saved
+    DMB                 // Data Memory Barrier
 ContextSwitch_AfterSave
 
     // Call OSTaskSwHook();
     // <Your code here>
-
+    BL          OSTaskSwHook
+    
     // OSPrioCur = OSPrioHighRdy;
     // <Your code here>
+    LDR     R2, =OSPrioCur
+    LDR     R3, =OSPrioHighRdy
+    LDRB    R3, [R3]
+    STRB    R3, [R2]
 
     // OSTCBCur  = OSTCBHighRdy;
     // <Your code here>
+    LDR     R1, =OSTCBCur
+    LDR     R3, =OSTCBHighRdy
+    LDR     R0, [R3]
+    STR     R0, [R1]
 
     // SP = OSTCBHighRdy->OSTCBStkPtr;
     // <Your code here>
+    LDR     R3, [R3];
+    LDR     R3, [R3]
+    MOV     SP, R3
     
     // Restore R4-R11
     // <Your code here>
+    POP {R4-R11}        // POP R4-R11
     
     // Ensure exception returns to Thread Mode and MSP
     MOV     LR, #EXC_RET_MSP_THREAD

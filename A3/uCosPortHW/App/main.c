@@ -1,3 +1,16 @@
+/*******************************************************************************
+Title       : uCOS Port to practice Context Switch 
+DESCRIPTION : implement context switching using uCOS.
+	      
+Created Date: 02/03/2019
+
+Assignment  : A3 uCOSPortHW
+
+Copyright   : Update by ASMEROM S. GHEBRIHIWET (UW login Id = samgry)
+            : 2019
+	    : All Rights Reserved
+*******************************************************************************/
+
 /************************************************************************************
 
 Copyright (c) 2001-2016  University of Washington Extension.  All rights reserved.
