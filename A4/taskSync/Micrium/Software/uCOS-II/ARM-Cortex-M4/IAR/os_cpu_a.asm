@@ -218,12 +218,7 @@ ContextSwitch
     // If R0==0 use conditional execution to set PSP to 0 and branch to 
     // ContextSwitch_AfterSave
     // <Your code here>
-//    CMP     R0, #0              //compare R0 == 0
-//    MOV     R1, #0              
-//    MSR     PSP, R1
-//    BEQ     ContextSwitch_AfterSave    // branch to ContextSwitch_AfterSave on equal
-
-    ITT     EQ                         // set up conditional statement for R0 == 0
+    ITT      EQ                         // set up conditional statement for R0 == 0
     MSREQ    PSP, R0
     BEQ      ContextSwitch_AfterSave    // branch to ContextSwitch_AfterSave on equal
 

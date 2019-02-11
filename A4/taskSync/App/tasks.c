@@ -482,8 +482,7 @@ void TaskRxFlags(void* pdata)
     {
     	// TODO EventFlags 06: add code here to wait for both TaskMBRxA and TaskMBRxB to signal that they have
     	// received a message
-//        OSFlagPend(rxFlags, 0x3, OS_FLAG_WAIT_SET_ALL, 0, &err);
-        OSFlagPend(rxFlags, 0x3, OS_FLAG_WAIT_CLR_ALL, 0, &err);
+        OSFlagPend(rxFlags, 0x3, OS_FLAG_WAIT_SET_ALL, 0, &err);
         
     	isError = (i != TaskMBRxA_msgCount) || (i != TaskMBRxB_msgCount);
     	if (isError && !iError)
@@ -497,8 +496,8 @@ void TaskRxFlags(void* pdata)
 
     	// TODO EventFlags 07: add code here to signal to both TaskMBRxA and TaskMBRxB that they can
     	// go ahead and receive their next message.
-//        OSFlagPost(rxFlags, 0x3, OS_FLAG_CLR, &err);
-        OSFlagPost(rxFlags, 0x3, OS_FLAG_SET, &err);
+        OSFlagPost(rxFlags, 0x3, OS_FLAG_CLR, &err);
+        
     	OSTimeDly(10);
     }
     if (iError)
