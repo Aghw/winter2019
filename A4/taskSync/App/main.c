@@ -4,7 +4,7 @@ DESCRIPTION : implement task synchronization service with uCOS.
 	      
 Created Date: 02/10/2019
 
-Assignment  : A3 uCOSPortHW
+Assignment  : A4 taskSync
 
 Copyright   : Update by ASMEROM S. GHEBRIHIWET (UW login Id = samgry)
             : 2019
