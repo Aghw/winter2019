@@ -94,7 +94,7 @@ void StartupTask(void* pdata)
 	char buf[BUFSIZE];
          
     // TODO semPrint 01: add code here to create semaphore semPrint as a binary semaphore
-        semPrint = OSSemCreate(1);                      //create semPrint as a binary semaphore
+        semPrint = OSSemCreate(1);              //create semPrint as a binary semaphore
         
 	printWithBuf(buf, BUFSIZE, "StartupTask: Begin\n");
 	printWithBuf(buf, BUFSIZE, "StartupTask: Starting timer tick\n");
@@ -106,8 +106,8 @@ void StartupTask(void* pdata)
 
 
 	// TODO Mailbox 01: add code here to create 2 mailboxes mboxA and mboxB, initially empty
-        mboxA = OSMboxCreate(NULL);             // create empty mailboxe mboxA
-        mboxB = OSMboxCreate(NULL);             // create empty mailboxe mboxB
+        mboxA = OSMboxCreate(NULL);              // create empty mailboxe mboxA
+        mboxB = OSMboxCreate(NULL);              // create empty mailboxe mboxB
         
 	// TODO Queue 01: add code here to create qMsg as a uCOS queue that uses qMsgVPtrs to store queue entry pointers
         qMsg = OSQCreate(qMsgVPtrs, QMAXENTRIES);// create uCOS queue qMsg;  
@@ -117,7 +117,7 @@ void StartupTask(void* pdata)
         qMsgMemPart = OSMemCreate(qMsgBlocks, QMAXENTRIES, sizeof(QMsg_t), &err); // create uCOS memory management
         
 	// TODO EventFlags 01: add code here to create event flag 'group' rxFlags
-        rxFlags = OSFlagCreate(0x0, &err);      // create and initialize an event flag group
+        rxFlags = OSFlagCreate(0x0, &err);       // create and initialize an event flag group
         
     // The maximum of tasks the application can have is defined by OS_MAX_TASKS in os_cfg.h
 	INT8U pri = APP_TASK_START_PRIO + 1;
